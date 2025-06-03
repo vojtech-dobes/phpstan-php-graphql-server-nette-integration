@@ -1,0 +1,31 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Vojtechdobes\\PHPStan\\GraphQL\\NetteDIContainerAdapter\:\:getFieldResolverProvider\(\) should return Vojtechdobes\\GraphQL\\FieldResolverProvider but returns object\.$#'
+			identifier: return.type
+			count: 1
+			path: src/GraphQL/NetteDIContainerAdapter.php
+
+		-
+			message: '#^Method Vojtechdobes\\PHPStan\\GraphQL\\NetteDIContainerAdapter\:\:getFieldResolverProvider\(\) throws checked exception Nette\\DI\\MissingServiceException but it''s missing from the PHPDoc @throws tag\.$#'
+			identifier: missingType.checkedException
+			count: 1
+			path: src/GraphQL/NetteDIContainerAdapter.php
+
+		-
+			message: '#^Method Vojtechdobes\\PHPStan\\GraphQL\\NetteDIContainerAdapter\:\:getSchema\(\) should return Vojtechdobes\\GraphQL\\TypeSystem\\Schema but returns object\.$#'
+			identifier: return.type
+			count: 1
+			path: src/GraphQL/NetteDIContainerAdapter.php
+
+		-
+			message: '#^Method Vojtechdobes\\PHPStan\\GraphQL\\NetteDIContainerAdapter\:\:getSchema\(\) throws checked exception Nette\\DI\\MissingServiceException but it''s missing from the PHPDoc @throws tag\.$#'
+			identifier: missingType.checkedException
+			count: 1
+			path: src/GraphQL/NetteDIContainerAdapter.php
+
+		-
+			message: '#^Parameter \#1 \$keys of function array_combine expects array\<int\|string\>, list\<string\|false\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/GraphQL/NetteDIContainerAdapter.php
