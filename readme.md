@@ -33,7 +33,7 @@ includes:
 graphqlDIContainer:
   dic: [Bootstrap, createContainerForPHPStan]
   extensionMap:
-    %rootDir%/../../../src/schema.graphqls
+    %rootDir%/../../../src/schema.graphqls: graphql
 ```
 
 Options:
