@@ -1,0 +1,13 @@
+includes:
+  - ../vendor/vojtech-dobes/phpstan-php-graphql-server/extension.neon
+  - ../extension_di_container.neon
+
+parameters:
+  graphql:
+    generatedDir: %rootDir%/../../../tests/generated-graphql
+    schemas: [%rootDir%/../../vojtech-dobes/phpstan-php-graphql-server/tests-shared/schema.graphqls]
+
+  graphqlDIContainer:
+    dic: [Vojtechdobes\Tests\MyConfigurator(), createContainer]
+    extensionMap:
+      %rootDir%/../../vojtech-dobes/phpstan-php-graphql-server/tests-shared/schema.graphqls: graphql

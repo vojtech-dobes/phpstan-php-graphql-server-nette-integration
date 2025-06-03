@@ -1,0 +1,11 @@
+parametersSchema:
+  graphqlDIContainer: structure([
+    dic: mixed()
+    extensionMap: arrayOf(string(), schema(string(), assert('is_file', 'Schema path must exist')))
+  ])
+
+services:
+  - class: Vojtechdobes\PHPStan\GraphQL\NetteDIContainerAdapter
+    arguments:
+      dic: %graphqlDIContainer.dic%
+      extensionMap: %graphqlDIContainer.extensionMap%

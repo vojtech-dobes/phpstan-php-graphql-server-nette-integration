@@ -1,0 +1,24 @@
+extensions:
+  graphql: Vojtechdobes\GraphQL\Integrations\Nette\Extension
+
+graphql:
+  autoReload: %debugMode%
+
+  fieldResolvers:
+    Query.validNonNullString: Vojtechdobes\TestsShared\Resolvers\QueryValidNonNullStringFieldResolver()
+    Query.invalidStringResolvedAsBool: Vojtechdobes\TestsShared\Resolvers\QueryInvalidStringResolvedAsBoolFieldResolver()
+    Query.invalidArgumentsMismatch: Vojtechdobes\TestsShared\Resolvers\QueryInvalidArgumentsMismatchFieldResolver()
+    Query.validDeferred: Vojtechdobes\TestsShared\Resolvers\QueryValidDeferredFieldResolver()
+
+    Query.arrayType: Vojtechdobes\TestsShared\Resolvers\QueryArrayTypeFieldResolver()
+    ArrayType: Vojtechdobes\GraphQL\ArrayFieldResolver()
+
+    Query.objectType: Vojtechdobes\TestsShared\Resolvers\QueryObjectTypeFieldResolver()
+    ObjectType.withGetter: Vojtechdobes\GraphQL\GetterFieldResolver()
+    ObjectType.withProperty: Vojtechdobes\GraphQL\PropertyFieldResolver()
+
+    Query.providerOfInvalidParentType: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidParentTypeFieldResolver()
+    InvalidParentType.name: Vojtechdobes\TestsShared\Resolvers\InvalidParentTypeNameFieldResolver()
+
+  schemaPath: %schemaPath%
+  tempDir: %tempDir%/graphql
