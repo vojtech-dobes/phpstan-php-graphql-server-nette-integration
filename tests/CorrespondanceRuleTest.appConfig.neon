@@ -17,8 +17,18 @@ graphql:
     ObjectType.withGetter: Vojtechdobes\GraphQL\GetterFieldResolver()
     ObjectType.withProperty: Vojtechdobes\GraphQL\PropertyFieldResolver()
 
-    Query.providerOfInvalidParentType: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidParentTypeFieldResolver()
-    InvalidParentType.name: Vojtechdobes\TestsShared\Resolvers\InvalidParentTypeNameFieldResolver()
+    Query.providerOfInvalidPersonParentTypeArray: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidPersonParentTypeArrayFieldResolver()
+    Query.providerOfInvalidPersonParentTypeEntity: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidPersonParentTypeEntityFieldResolver()
+    Query.providerOfInvalidPersonParentTypeThing: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidPersonParentTypeThingFieldResolver()
+    Query.providerOfValidPersonParentTypePerson: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidPersonParentTypePersonFieldResolver()
+
+    Query.providerOfInvalidEntityParentTypeArray: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfInvalidEntityParentTypeArrayFieldResolver()
+    Query.providerOfValidEntityParentTypeEntity: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidEntityParentTypeEntityFieldResolver()
+    Query.providerOfValidEntityParentTypePerson: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidEntityParentTypePersonFieldResolver()
+    Query.providerOfValidEntityParentTypeThing: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidEntityParentTypeThingFieldResolver()
+
+    PersonParentType.name: Vojtechdobes\TestsShared\Resolvers\PersonParentTypeNameFieldResolver()
+    EntityParentType.name: Vojtechdobes\TestsShared\Resolvers\EntityParentTypeNameFieldResolver()
 
   schemaPath: %schemaPath%
   tempDir: %tempDir%/graphql

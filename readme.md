@@ -1,4 +1,4 @@
-# PHPStan extension for PHP GraphQL Server integration with Nette Framework
+# PHPStan extension for [PHP GraphQL Server integration with Nette Framework](https://github.com/vojtech-dobes/php-graphql-server-nette-integration)
 
 ![Checks](https://github.com/vojtech-dobes/phpstan-php-graphql-server-nette-integration/actions/workflows/checks.yml/badge.svg?branch=master&event=push)
 
@@ -18,7 +18,12 @@ composer require vojtech-dobes/phpstan-php-graphql-server-nette-integration
 
 ### Setup
 
-Using this extension you tell PHPStan about your GraphQL service in two ways. Either you can directly use services registered in your DI container, or you can point the extension at NEON configuration file that holds all necessary information in static form. The latter way is less convenient but won't prevent you from using PHPStan if your DI container can't temporarily compile (which is likely to happen during active development).
+Using this extension you can tell PHPStan about your GraphQL service in two ways:
+
+- either you can directly use services registered in your DI container
+- or you can point the extension at NEON configuration file that holds all necessary information in static form
+
+The latter way is less convenient but won't prevent you from using PHPStan if your DI container can't temporarily compile (which is likely to happen during active development).
 
 
 
