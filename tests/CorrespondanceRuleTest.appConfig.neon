@@ -27,8 +27,13 @@ graphql:
     Query.providerOfValidEntityParentTypePerson: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidEntityParentTypePersonFieldResolver()
     Query.providerOfValidEntityParentTypeThing: Vojtechdobes\TestsShared\Resolvers\QueryProviderOfValidEntityParentTypeThingFieldResolver()
 
+    Query.rootFieldWithParentBasedResolver: Vojtechdobes\GraphQL\PropertyFieldResolver()
+
     PersonParentType.name: Vojtechdobes\TestsShared\Resolvers\PersonParentTypeNameFieldResolver()
     EntityParentType.name: Vojtechdobes\TestsShared\Resolvers\EntityParentTypeNameFieldResolver()
+
+    Query.validSelfReference: Vojtechdobes\TestsShared\Resolvers\QueryValidSelfReferenceFieldResolver()
+    SelfReference.internalSelfReference: Vojtechdobes\GraphQL\PropertyFieldResolver()
 
   schemaPath: %schemaPath%
   tempDir: %tempDir%/graphql
