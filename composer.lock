@@ -2686,12 +2686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vojtech-dobes/phpstan-php-graphql-server.git",
-                "reference": "78f698d271b09857ff68a5774fae73d541b9744c"
+                "reference": "8ced9ebc1641c930afb3ea6abc37e9ea31b64f5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vojtech-dobes/phpstan-php-graphql-server/zipball/78f698d271b09857ff68a5774fae73d541b9744c",
-                "reference": "78f698d271b09857ff68a5774fae73d541b9744c",
+                "url": "https://api.github.com/repos/vojtech-dobes/phpstan-php-graphql-server/zipball/8ced9ebc1641c930afb3ea6abc37e9ea31b64f5a",
+                "reference": "8ced9ebc1641c930afb3ea6abc37e9ea31b64f5a",
                 "shasum": ""
             },
             "require": {
@@ -2738,7 +2738,7 @@
                 "issues": "https://github.com/vojtech-dobes/phpstan-php-graphql-server/issues",
                 "source": "https://github.com/vojtech-dobes/phpstan-php-graphql-server/tree/master"
             },
-            "time": "2025-06-04T12:23:14+00:00"
+            "time": "2025-06-05T13:08:32+00:00"
         }
     ],
     "aliases": [],
