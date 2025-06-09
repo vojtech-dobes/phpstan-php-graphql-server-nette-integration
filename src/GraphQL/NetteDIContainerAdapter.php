@@ -29,7 +29,7 @@ final class NetteDIContainerAdapter implements Adapter
 		$this->extensionMap = array_combine(
 			array_map(
 				static fn ($key) => realpath($key),
-				array_keys($extensionMap)
+				array_keys($extensionMap),
 			),
 			$extensionMap,
 		);

@@ -16,6 +16,9 @@
 		}
 	},
 	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		},
 		"sort-packages": true
 	},
 	"keywords": [
@@ -45,11 +48,13 @@
 		"phpunit/phpunit": "^12.1",
 		"spaze/phpstan-disallowed-calls": "^4.5.0",
 		"tracy/tracy": "^2.10.9",
+		"vojtech-dobes/php-codestyle": "~0.2.0",
 		"vojtech-dobes/php-grammar-processing": "dev-master@dev",
 		"vojtech-dobes/php-graphql-server": "dev-master@dev",
 		"vojtech-dobes/phpstan-php-graphql-server": "dev-master@dev"
 	},
 	"scripts": {
+		"fmt": "phpcbf",
 		"lint": "parallel-lint src tests",
 		"phpstan": "phpstan analyse --memory-limit 256M",
 		"test": "composer dump-autoload && phpunit tests"
